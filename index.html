@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body class="dark">
-    <div id="unity-container" class="unity-desktop">
+   <div id="unity-container" class="unity-desktop">
         <canvas id="unity-canvas"></canvas>
     </div>
     <div id="unity-container2" class="unity-desktop">
@@ -49,9 +49,9 @@
       const buildUrl = "Build";
       const loaderUrl = buildUrl + "/bc_build.loader.js";
       const config = {
-        dataUrl: buildUrl + "/bc_build.data.br",
-        frameworkUrl: buildUrl + "/bc_build.framework.js.br",
-        codeUrl: buildUrl + "/bc_build.wasm.br",
+        dataUrl: buildUrl + "/bc_build.data.unityweb",
+        frameworkUrl: buildUrl + "/bc_build.framework.js.unityweb",
+        codeUrl: buildUrl + "/bc_build.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "PLAYVIET",
         productName: "Bubble Planet Spinning Puzzle",
@@ -79,6 +79,7 @@
         }
         return false;
       }());
+
 if (window.innerHeight > window.innerWidth) {
 					canvas = document.querySelector("#unity-canvas2");
 					container = document.querySelector("#unity-container2");
